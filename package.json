@@ -1,0 +1,19 @@
+{
+  "name": "node-filter-demo",
+  "version": "^3.11.2",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swabha1/image-resize.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "gm-resize": "node GM_Resize.js"
+  },
+  "author": "Swapnil Bhamat",
+  "license": "MIT",
+  "dependencies": {
+    "gm": "^1.23.0",
+    "json2csv": "^3.11.2"
+  }
+}

@@ -1,0 +1,28 @@
+Graphics Magick
+================
+******PNG*******
+gm convert -resize 1024 E:\cap.png -quality 10 E:\cap_std_gm.png
+
+gm convert -resize 150 E:\cap.png -quality 10 E:\cap_thumb_gm.png
+
+******JPG*******
+gm convert -resize 1024 E:\cap.png -quality 90 E:\cap_std_gm.jpg
+
+gm convert -resize 150 E:\cap.png -quality 10 E:\cap_thumb_gm.jpg
+
+gm mogrify -output-directory E:\\Node-Projects\\Image-resize\\public\\Images\\converted\\GM\\Thumbnail -resize 150 -quality 10 -format png *.*
+
+
+Image Magick
+=============
+convert -resize 1024 E:\cap.png -quality 10 -define PNG:compression-level=9 E:\cap_std_im.png
+
+convert -resize 150 E:\cap.png -quality 10 -define PNG:compression-level=9 E:\cap_thumb_im.png
+
+mogrify -path E:\\Node-Projects\\Image-resize\\public\\Images\\converted\\IM\\Thumbnail -resize 150 -quality 10 -format png *.*
+
+Libvips
+========
+vips resize E:\Node-Projects\colorization-vips\cap.png E:\Node-Projects\colorization-vips\cap_std_vips.png 0.7314
+
+vips resize E:\Node-Projects\colorization-vips\cap.png E:\Node-Projects\colorization-vips\cap_thumb_vips.png 0.1071 (targetW / sourceW)
